@@ -3,146 +3,413 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pradhap | Portfolio</title>
+
+<title>Pradhap R | Resume Portfolio</title>
 
 <style>
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-  background:#0f172a;
-  color:#fff;
-  line-height:1.6;
+    background:#f2f2f2;
+    color:#222;
+    line-height:1.6;
 }
 
-header{
-  text-align:center;
-  padding:80px 20px;
+.container{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:45px 55px;
+    box-shadow:0 0 15px rgba(0,0,0,0.12);
 }
 
-header h1{
-  font-size:45px;
+.header{
+    text-align:center;
+    border-bottom:2px solid #222;
+    padding-bottom:18px;
+    margin-bottom:25px;
 }
 
-header span{
-  color:#38bdf8;
+.header h1{
+    font-size:32px;
+    letter-spacing:1px;
+    margin-bottom:8px;
 }
 
-header p{
-  margin:15px 0;
-  color:#cbd5e1;
+.header p{
+    font-size:14px;
+    color:#444;
 }
 
-.btn{
-  display:inline-block;
-  padding:12px 25px;
-  background:#38bdf8;
-  color:#fff;
-  text-decoration:none;
-  border-radius:8px;
-  margin-top:20px;
+.contact{
+    margin-top:8px;
+    font-size:14px;
 }
 
-section{
-  max-width:900px;
-  margin:auto;
-  padding:50px 20px;
+.contact a{
+    color:#222;
+    text-decoration:none;
 }
 
-h2{
-  text-align:center;
-  color:#38bdf8;
-  margin-bottom:20px;
+.section{
+    margin-bottom:25px;
+}
+
+.section-title{
+    font-size:18px;
+    font-weight:bold;
+    text-transform:uppercase;
+    border-bottom:1.5px solid #222;
+    padding-bottom:5px;
+    margin-bottom:12px;
+}
+
+.section p{
+    font-size:14px;
+}
+
+.education-item,
+.experience-item,
+.project-item{
+    margin-bottom:15px;
+}
+
+.education-item h3,
+.experience-item h3,
+.project-item h3{
+    font-size:15px;
+    margin-bottom:3px;
+}
+
+.education-item p,
+.experience-item p,
+.project-item p{
+    font-size:14px;
 }
 
 .skills{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:15px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px 30px;
 }
 
 .skill{
-  background:#1e293b;
-  padding:12px 20px;
-  border-radius:8px;
+    font-size:14px;
 }
 
-.project{
-  background:#1e293b;
-  padding:20px;
-  border-radius:10px;
-  margin-bottom:20px;
+ul{
+    margin-left:20px;
 }
 
-footer{
-  text-align:center;
-  padding:20px;
-  color:#94a3b8;
+li{
+    font-size:14px;
+    margin-bottom:5px;
+}
+
+.buttons{
+    text-align:center;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 20px;
+    margin:5px;
+    background:#222;
+    color:white;
+    text-decoration:none;
+    border-radius:4px;
+    font-size:14px;
+}
+
+.btn:hover{
+    background:#444;
+}
+
+@media(max-width:600px){
+    .container{
+        margin:0;
+        padding:30px 22px;
+        box-shadow:none;
+    }
+
+    .header h1{
+        font-size:27px;
+    }
+
+    .skills{
+        grid-template-columns:1fr;
+    }
 }
 </style>
-
 </head>
+
 <body>
 
-<header>
-<h1>Hi, I'm <span>Pradhap</span></h1>
-<p>Front-End Developer</p>
+<div class="container">
 
-<a href="#contact" class="btn">Contact Me</a>
-</header>
+    <!-- HEADER -->
+    <div class="header">
+        <h1>PRADHAP R</h1>
 
-<section>
-<h2>About Me</h2>
+        <p>
+            Computer Science and Engineering Student
+        </p>
 
-<p>
-I'm a passionate Front-End Developer who loves building beautiful and responsive websites using HTML, CSS and JavaScript.
-</p>
+        <div class="contact">
+            <a href="mailto:rpradhap9@gmail.com">
+                rpradhap9@gmail.com
+            </a>
+            &nbsp; | &nbsp;
 
-</section>
+            <a href="https://pradhap7384.github.io/Portofolio/" target="_blank">
+                Portfolio
+            </a>
 
-<section>
+            &nbsp; | &nbsp;
 
-<h2>Skills</h2>
+            <a href="https://github.com/pradhap7384" target="_blank">
+                GitHub
+            </a>
+        </div>
+    </div>
 
-<div class="skills">
-<div class="skill">HTML</div>
-<div class="skill">CSS</div>
-<div class="skill">JavaScript</div>
-<div class="skill">GitHub</div>
+
+    <!-- CAREER OBJECTIVE -->
+    <div class="section">
+
+        <div class="section-title">
+            Career Objective
+        </div>
+
+        <p>
+            Motivated and passionate Computer Science and Engineering student
+            seeking an opportunity to apply technical knowledge and problem-solving
+            skills in a professional environment. Interested in web development,
+            software development and learning new technologies while contributing
+            effectively to an organization.
+        </p>
+
+    </div>
+
+
+    <!-- EDUCATION -->
+    <div class="section">
+
+        <div class="section-title">
+            Education
+        </div>
+
+        <div class="education-item">
+
+            <h3>
+                Bachelor of Engineering (B.E.)
+            </h3>
+
+            <p>
+                Computer Science and Engineering
+            </p>
+
+            <p>
+                SSM College of Engineering (Anna University), Dindigul
+            </p>
+
+            <p>
+                <strong>CGPA: 8.2 / 10 (Till 6th Semester)</strong>
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <div class="section">
+
+        <div class="section-title">
+            Technical Skills
+        </div>
+
+        <div class="skills">
+
+            <div class="skill">
+                <strong>Programming:</strong> Java
+            </div>
+
+            <div class="skill">
+                <strong>Web:</strong> HTML, CSS, JavaScript
+            </div>
+
+            <div class="skill">
+                <strong>Database:</strong> SQL
+            </div>
+
+            <div class="skill">
+                <strong>Tools:</strong> Git, GitHub
+            </div>
+
+            <div class="skill">
+                <strong>Concepts:</strong> OOP, Data Structures
+            </div>
+
+            <div class="skill">
+                <strong>Other:</strong> Problem Solving
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="section">
+
+        <div class="section-title">
+            Projects
+        </div>
+
+        <div class="project-item">
+
+            <h3>
+                Personal Portfolio Website
+            </h3>
+
+            <ul>
+                <li>
+                    Developed a responsive personal portfolio website using
+                    HTML and CSS.
+                </li>
+
+                <li>
+                    Added profile, education, technical skills, projects and
+                    contact information.
+                </li>
+
+                <li>
+                    Hosted the portfolio using GitHub Pages.
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div class="project-item">
+
+            <h3>
+                Web Development Project
+            </h3>
+
+            <ul>
+                <li>
+                    Designed and developed a user-friendly web interface.
+                </li>
+
+                <li>
+                    Implemented responsive layouts using HTML and CSS.
+                </li>
+
+                <li>
+                    Focused on clean design and easy navigation.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- INTERNSHIP -->
+    <div class="section">
+
+        <div class="section-title">
+            Internship
+        </div>
+
+        <div class="experience-item">
+
+            <h3>
+                Web Development Internship
+            </h3>
+
+            <p>
+                <strong>Tech Volt, Coimbatore</strong>
+            </p>
+
+            <ul>
+                <li>
+                    Gained practical experience in web development.
+                </li>
+
+                <li>
+                    Worked with HTML, CSS and basic JavaScript.
+                </li>
+
+                <li>
+                    Improved understanding of responsive web design and
+                    website development.
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- STRENGTHS -->
+    <div class="section">
+
+        <div class="section-title">
+            Strengths
+        </div>
+
+        <ul>
+            <li>Quick Learner</li>
+            <li>Problem Solving</li>
+            <li>Team Work</li>
+            <li>Adaptability</li>
+            <li>Time Management</li>
+        </ul>
+
+    </div>
+
+
+    <!-- DECLARATION -->
+    <div class="section">
+
+        <div class="section-title">
+            Declaration
+        </div>
+
+        <p>
+            I hereby declare that the information provided above is true and
+            correct to the best of my knowledge.
+        </p>
+
+    </div>
+
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+        <a class="btn"
+           href="mailto:rpradhap9@gmail.com">
+            Contact Me
+        </a>
+
+        <a class="btn"
+           href="https://github.com/pradhap7384"
+           target="_blank">
+            GitHub
+        </a>
+
+    </div>
+
 </div>
-
-</section>
-
-<section>
-
-<h2>Projects</h2>
-
-<div class="project">
-<h3>Portfolio Website</h3>
-<p>My personal portfolio website hosted using GitHub Pages.</p>
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p>📧 Email: your@email.com</p>
-<p>💻 GitHub: https://github.com/PRADHAP7384</p>
-
-</section>
-
-<footer>
-
-© 2026 Pradhap | All Rights Reserved
-
-</footer>
 
 </body>
 </html>
