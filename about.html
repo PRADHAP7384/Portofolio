@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>About - Pradhap R</title>
+    <title>About | Pradhap R</title>
 
     <style>
         * {
@@ -15,83 +15,118 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #333;
+            background: #050b12;
+            color: white;
         }
 
         nav {
-            background: #111;
-            padding: 25px 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            background: #08111c;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 22px;
             font-weight: bold;
-            margin: 0 15px;
         }
 
         nav a:hover {
-            color: red;
+            color: #00d9ff;
         }
 
         .about {
-            min-height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px;
             text-align: center;
-            padding: 30px;
-        }
-
-        .about-box {
-            max-width: 700px;
         }
 
         h1 {
-            color: #e22;
-            font-size: 45px;
+            font-size: 42px;
             margin-bottom: 25px;
+            color: #00d9ff;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.8;
+            color: #d5d5d5;
+        }
+
+        .info {
+            margin-top: 40px;
+            display: grid;
+            gap: 20px;
+        }
+
+        .card {
+            background: #0b1724;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #163047;
+        }
+
+        .card h2 {
+            color: #00d9ff;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 
 <body>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section class="about">
-    <div class="about-box">
+    <section class="about">
 
         <h1>About Me</h1>
 
         <p>
-            I am Pradhap R, a Computer Science and Engineering student.
-            I am interested in Web Development and Software Development.
+            Hello! I'm <strong>Pradhap R</strong>, a passionate Computer Science
+            and Engineering student interested in web development and technology.
+            I enjoy creating modern, responsive and user-friendly websites.
         </p>
 
-        <br>
+        <div class="info">
 
-        <p>
-            My technical skills include Java, HTML, CSS,
-            JavaScript and SQL.
-        </p>
+            <div class="card">
+                <h2>🎓 Education</h2>
+                <p>
+                    Bachelor of Engineering (B.E.)<br>
+                    Computer Science and Engineering<br>
+                    SSM College of Engineering<br>
+                    CGPA: 8.2 / 10
+                </p>
+            </div>
 
-    </div>
-</section>
+            <div class="card">
+                <h2>💻 Interests</h2>
+                <p>
+                    Web Development, Java Programming, UI Design,
+                    Software Development and learning new technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🚀 Career Goal</h2>
+                <p>
+                    To build a successful career in the IT industry and
+                    contribute to innovative software and web development projects.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 </html>
